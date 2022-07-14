@@ -1,6 +1,6 @@
 async function putSekeleton() {
     for (let i = 0; i < 20; i++) {
-        document.getElementById('search-results-skeleton').innerHTML += `<div class="card-img-search card-tall-img-search card-wide-img-search skeleton" style="background-image:url('/img/loading.png')"></div>`;
+        document.getElementById('search-results-skeleton').innerHTML += `<div class="card-img-search card-tall-img-search card-wide-img-search skeleton" style="background-image:url('./img/loading.png')"></div>`;
     }
 
     await loadJSON();
