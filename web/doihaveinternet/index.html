@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Do I Have Internet?</title>
+</head>
+
+<body>
+    <nav class='navbar navbar-expand-lg navbar-light' style="background-color:#f8f9fa">
+        <div class='container-fluid'>
+            <button class='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#navbarNavAltMarkup' aria-controls='navbarNavAltMarkup' aria-expanded='false' aria-label='Toggle navigation'>
+                <span class='navbar-toggler-icon'></span>
+            </button>
+            <div class='collapse navbar-collapse justify-content-center' id='navbarNavAltMarkup'>
+                <div class='navbar-nav' id="navbar">
+                    <a class='navbar-brand' href='https://serversmp.xyz/index.html'>ServerSMP</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+	<div style="background-color:#f8f9fa">
+		<h6 style="text-align:center;margin:0">This is a modified version of the site for serversmp.</h6>
+	</div>
+
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand mb-0 h1" href="/">Do I Have Internet?</a>
+            <form class="d-flex">
+                <button type="button" class="btn btn-secondary" onclick="runCheck()">Check?</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- <h4 class="h4">NO INTERNET, NO LIFE</h4> -->
+
+    <div class="container">
+        <i class="bi bi-router-fill"></i>
+        <h1>Do I Have Internet?</h1>
+        <h5>Fast, Free, Instant</h5>
+    </div>
+
+    <div class="container-2">
+        <h2>Why do I need internet?</h2>
+        <div class="row-wifi">
+            <div class="you-dont-have-internet">
+                <i class="bi bi-person-fill"></i>
+                <h5>You don't have an offline life</h5>
+            </div>
+            <div class="you-dont-have-internet">
+                <i class="bi bi-truck-flatbed"></i>
+                <h5>You wont get hit by a truck</h5>
+            </div>
+            <div class="you-dont-have-internet">
+                <i class="bi bi-gpu-card"></i>
+                <h5>You can finaly get a gpu</h5>
+            </div>
+            <div class="you-dont-have-internet">
+                <i class="bi bi-emoji-laughing-fill"></i>
+                <h5>You can rickroll your friends</h5>
+            </div>
+        </div>
+    </div>
+
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function navbar() {
+            fetch("/assets/txt/navbarLink.txt")
+                .then(res => res.text())
+                .then(res => document.getElementById("navbar").innerHTML += res)
+        }
+
+        navbar();
+
+        function runCheck() {
+            document.body.innerHTML = "";
+
+            document.body.style.backgroundColor = "#00C000";
+
+            let checkmark = document.createElement("i");
+            checkmark.className = "bi bi-check-lg";
+            document.body.appendChild(checkmark);
+            checkmark.style.position = "absolute";
+            checkmark.style.top = "50%";
+            checkmark.style.left = "50%";
+            checkmark.style.transform = "translate(-50%, -50%)";
+            checkmark.style.fontSize = "100px";
+            checkmark.style.color = "white";
+
+            setTimeout(function () {
+                window.location.href = "https://youtu.be/zN8YNNHcaZc";
+            }, 1000);
+        }
+    </script>
+</body>
+
+</html>
