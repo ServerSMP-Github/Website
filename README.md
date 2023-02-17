@@ -1,7 +1,19 @@
-# ServerSMP
+<br />
+<p align="center">
+  <a href="https://github.com/ServerSMP-Github/Website">
+    <img src="./icon.png" alt="BOT-logo" height="315px" width="252px">
+  </a>
+</p>
 
-This is the website for ServerSMP!
+<h3 align="center">ServerSMP - Website</h3>
 
-You can view this page [here](https://serversmp.xyz)
+<p align="center">This is the website for ServerSMP!</p>
 
-![banner](https://github.com/Prince527GitHub/ServerSMP/blob/ServerSMP-Web/assets/image/banner/banner-smp.png?raw=true)
+<p align="center">
+  <a href="https://serversmp.xyz/">View</a>
+</p>
+
+| Version | Active |
+|---------|--------|
+| v2     | ✔️      |
+| v1     | ❌      |
