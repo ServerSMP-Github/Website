@@ -1,7 +1,10 @@
-# ServerSMP
+<br />
+<p align="center">
+  <a href="https://github.com/ServerSMP-Github/Website">
+    <img src="https://raw.githubusercontent.com/ServerSMP-Github/Website/web/icon.png" alt="web-logo">
+  </a>
+</p>
 
-This is the website for ServerSMP!
+<h3 align="center">ServerSMP - Website</h3>
 
-You can view this page [here](https://serversmp.xyz)
-
-![banner](https://github.com/Prince527GitHub/ServerSMP/blob/ServerSMP-Web/assets/image/banner/banner-smp.png?raw=true)
+<p align="center">This is the website for ServerSMP!</p>
