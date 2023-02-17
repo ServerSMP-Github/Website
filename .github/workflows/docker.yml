@@ -2,10 +2,10 @@ name: BuildWebsite
 
 on:
   push:
-    branches: [ "web" ]
+    branches: [ "v1" ]
     tags: [ "v*.*.*" ]
   pull_request:
-    branches: [ "web" ]
+    branches: [ "v1" ]
 
 env:
   REGISTRY: ghcr.io
