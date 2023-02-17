@@ -1,7 +1,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/ServerSMP-Github/Website">
-    <img src="./icon.png" alt="BOT-logo" height="315px" width="252px">
+    <img src="./icon.png" alt="BOT-logo">
   </a>
 </p>
 
