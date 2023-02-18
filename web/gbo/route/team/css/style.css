@@ -1,0 +1,17 @@
+body {
+    background-color: #191919;
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+}
+
+.circle {
+    padding-bottom: 10px;
+    border-radius: 50%;
+}
+
+.col h1 {
+    color: #a28a4c;
+}

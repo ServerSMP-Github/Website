@@ -1,0 +1,13 @@
+body {
+    background: #000;
+}
+
+.container {
+    text-align: center;
+}
+
+.container p {
+    text-align: left;
+    padding: 0px;
+    margin: 0px;
+}

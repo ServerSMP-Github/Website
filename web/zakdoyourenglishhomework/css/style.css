@@ -1,0 +1,28 @@
+.background {
+    background-color: #000;
+}
+
+.status {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 5rem;
+    color: #fff;
+    padding: 0;
+    flex: auto;
+}
+
+h2 {
+    font-weight: 100;
+    font-size: 2rem;
+}
+
+a {
+    background-color: #000;
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    background-color: #fff;
+    color: #000;
+}

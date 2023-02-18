@@ -1,0 +1,19 @@
+body {
+    background: #000;
+}
+
+.container h2 {
+    text-align: center;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 10%;
+    height: 10%;
+}
+
+@media (orientation: portrait) {
+    .row {
+        display: block;
+    }
+}

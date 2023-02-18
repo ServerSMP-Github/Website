@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./js/script.js"></script>
+    <title>Vinylist</title>
+</head>
+<body>
+
+    <div class="center background divCenter" id="divAPI">
+        <h1 class="centerText">API KEY (last.fm)</h1>
+        <input class="textBox" type="text" id="apiKey">
+        <button class="button" onClick="setAPI()">Set</button>
+    </div> 
+
+    <div class="hidden" id="document">
+        <div class="nav background">
+            <ul>
+                <li>
+                    <a href="javascript:getList()" class="title">Vinylist</a>
+                </li>
+                <li style="float:right;">
+                    <a href="javascript:searchBox()">Search</a>
+                </li>
+                <li style="float:right;">
+                    <a href="javascript:getList()">Home</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="page"></div>
+    </div>
+
+</body>
+</html>

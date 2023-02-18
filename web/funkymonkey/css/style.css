@@ -1,0 +1,136 @@
+body {
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    image-rendering: pixelated;
+    background-color: #000;
+    background-size: cover;
+    color: #fff;
+}
+
+* {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    box-sizing: border-box;
+    font-family: minecraft;
+    text-align: center;
+    color: #fff;
+}
+
+.btn {
+    background-color: #75a743;
+    border: 2px solid #468232;
+    transition-duration: .5s;
+    font-family: minecraft;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #a8ca58;
+    cursor: pointer;
+    color: #fff;
+}
+
+#game {
+    border: 1px solid #a8ca58;
+}
+
+.media-image {
+    height: 25px;
+    width: 25px;
+}
+
+img {
+    image-rendering: pixelated;
+}
+
+.download-button {
+    padding-top: 15px;
+}
+
+.download-button:hover {
+    color: #251f1f;
+    cursor: pointer;
+}
+
+.style-is-cool {
+    image-rendering: pixelated;
+    margin-right: auto;
+    text-align: center;
+    margin-left: auto;
+}
+
+.link-h6 {
+    margin-top: 10px;
+}
+
+.link-h6:hover {
+    color: #3a2e2e;
+    cursor: pointer;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.top-left {
+    position: absolute;
+    left: 16px;
+    top: 8px;
+}
+
+.top-right {
+    position: absolute;
+    right: 16px;
+    top: 8px;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+.centered {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.hero {
+    justify-content: center;
+    background-size: cover;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    color: #fff;
+    height: 50vh;
+    width: 100%;
+}
+
+.stuff > * {
+    display: inline-block;
+}
+
+@font-face {
+    src: url("../font/minecraft.woff2") format('woff2'), url("../font/minecraft.woff") format('woff');
+    font-family: minecraft;
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+}

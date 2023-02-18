@@ -1,0 +1,55 @@
+@font-face {
+    src: url("../font/minecraft.woff2") format('woff2'), url("../font/minecraft.woff") format('woff');
+    font-family: minecraft;
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400;
+}
+
+body {
+    background-image: url("../img/background.jpg");
+    image-rendering: -moz-crisp-edges;
+    image-rendering: pixelated;
+    box-sizing: border-box;
+    font-family: minecraft;
+    text-align: center;
+    color: #000;
+}
+
+.centerContainer {
+    background-image: url("../img/forground.jpg");
+    transform: translate(-50%, -50%);
+    border: 3px solid green;
+    border-radius: 0.25rem;
+    position: absolute;
+    padding: 10px;
+    width: 50%;
+    margin: 0;
+    left: 50%;
+    top: 50%;
+}
+
+.buttonGroup {
+    display: flex;
+    justify-content: center;
+}
+
+.buttonGroup a {
+    background-color: #75a743;
+    border: 2px solid #468232;
+    transition-duration: .5s;
+    font-family: minecraft;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px 24px;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    color: #000;
+}
+
+.buttonGroup a:hover {
+    background-color: #a8ca58;
+}

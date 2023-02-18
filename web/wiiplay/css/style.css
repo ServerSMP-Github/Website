@@ -1,0 +1,121 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap);
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+}
+
+p {
+    line-height: 1.8;
+    margin: 15px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+header {
+    background: #4682b4;
+    margin-bottom: 40px;
+    padding: 5px;
+}
+
+header,
+header a {
+    color: #fff;
+}
+
+.container {
+    max-width: 768px;
+    padding: 0 10px;
+    overflow: auto;
+    margin: auto;
+}
+
+.btn {
+    display: inline-block;
+    background: #4682b4;
+    text-decoration: none;
+    font-family: inherit;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 15px;
+    color: #fff;
+    border: none;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:hover {
+    transform: scale(.98);
+}
+
+.btn-back {
+    background: #f4f4f4;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.posts {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 30px;
+    grid-gap: 30px;
+    display: grid;
+    gap: 30px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    margin-bottom: 25px;
+    padding: 15px;
+}
+
+.card-page {
+    padding: 15px 30px
+}
+
+.post-title {
+    margin: 10px 0
+}
+
+.post-date {
+    background: #f4f4f4;
+    margin-bottom: 20px;
+    padding: 3px 10px
+}
+
+.post-body ul,
+ol {
+    line-height: 2.3;
+    font-weight: 700;
+    font-size: 110%;
+    margin: 10px 0;
+}
+
+.post-body pre {
+    background: #f4f4f4;
+    line-height: 2.3;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+@media (max-width:500px) {
+    .posts {
+        grid-template-columns: 1fr;
+    }
+}

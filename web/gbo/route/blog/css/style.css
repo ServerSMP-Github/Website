@@ -1,0 +1,38 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+    border: 1px solid #b59191;
+    margin: 25px;
+}
+
+.video-container {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+video {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+.sidebar {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    padding: 5px;
+}
+
+.sidebar p {
+    color: #6e6161;
+    padding: 0px;
+    margin: 0px;
+}
+
+@media (orientation: portrait) {
+    .grid-container {
+        display: block;
+    }
+}

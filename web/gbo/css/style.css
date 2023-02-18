@@ -1,0 +1,45 @@
+.nav-bg-dark {
+    background-color: #000;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+.nav-link:hover {
+    color: #fff;
+}
+
+.title {
+    font-size: 1.5rem;
+}
+
+.nav-padding-top {
+    padding-top: 10px;
+}
+
+.nav-padding-bottom {
+    padding-bottom: 10px;
+}
+
+.customButton {
+    background-color: #b38a4c;
+    text-decoration: none;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: 0.5s;
+}
+
+.customButton:hover {
+    background-color: rgba(179, 138, 76, 0.5);
+    color: #fff;
+}
+
+.center {
+    text-align: center;
+}
+
+.alert {
+    margin: 0px;
+}

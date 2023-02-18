@@ -1,0 +1,31 @@
+body {
+    background-color: #191919;
+}
+
+.normal {
+    text-align: left;
+    color: #fff;
+    margin: auto;
+}
+
+.normal h1 {
+    color: #b38a4c;
+}
+
+.padding {
+    padding: 25px;
+}
+
+.image {
+    background-image: url("../img/background.webp");
+    padding-bottom: 25px;
+}
+
+.row {
+    --bs-gutter-x: 0px
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+}
