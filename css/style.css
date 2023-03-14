@@ -82,6 +82,12 @@ body {
     display: grid;
 }
 
+@media (width <= 587px) {
+    .grid {
+        grid-template-columns: none;
+    }
+}
+
 .box {
     text-align: center;
     padding: 10px;
@@ -90,6 +96,12 @@ body {
 }
 
 @media (max-width: 500px){
+    .box {
+        width: auto;
+    }
+}
+
+@media (width < 840px) {
     .box {
         width: auto;
     }
