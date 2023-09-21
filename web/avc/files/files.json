@@ -87,7 +87,11 @@
         "./files/img/88.webp",
         "./files/img/89.webp",
         "./files/img/90.webp",
-        "./files/img/91.webp"
+        "./files/img/91.webp",
+        "./files/img/92.webp",
+        "./files/img/93.webp",
+        "./files/img/94.webp"
+        "./files/img/95.webp"
     ],
     "audio": [
         "./files/audio/1.webm"
