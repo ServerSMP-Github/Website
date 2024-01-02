@@ -1,0 +1,112 @@
+@import url('./quicksand.css');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #262626;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    background-color: #1e2122;
+    box-sizing: border-box;
+    border-radius: .25rem;
+    padding: 20px;
+    height: auto;
+    margin: auto;
+    width: 90%;
+}
+
+@media screen and (width < 1200px) {
+    .container {
+        width: 95%;
+    }
+}
+
+.subContainer {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    background-color: #282c34;
+    border-radius: .25rem;
+    padding: .5rem;
+    color: #ccc;
+}
+
+.hidden {
+    display: none;
+}
+
+img {
+    border-radius: .25rem;
+    height: 25%;
+    width: 25%;
+}
+
+pre {
+    background-color: #181a1b;
+    border: 1px solid #746c60;
+    border-radius: .25rem;
+    padding: 10px;
+}
+
+table, th, td {
+    border: 1px solid #746c60;
+    border-collapse: collapse;
+    border-radius: .25rem;
+    width: 60%;
+}
+
+th, td {
+    text-align: left;
+    padding: 5px;
+}
+
+p code {
+    background-color: #181a1b;
+    border: 1px solid #746c60;
+    border-radius: .25rem;
+    color: #fff;
+    padding: 3px;
+}
+
+pre code.hljs {
+    background-color: #181a1b;
+    padding: 0;
+}
+
+video {
+    border-radius: .25rem;
+    max-width: 500px;
+    height: auto;
+    width: 100%;
+}
+
+iframe {
+    min-height: 300px;
+    max-width: 500px;
+    height: auto;
+    width: 100%;
+}
+
+audio {
+    border-radius: .25rem;
+    object-fit: contain;
+    max-height: 100%;
+    max-width: 100%;
+    margin: auto;
+}
+
+a {
+    color: #7068ff;
+}
+
+a:hover {
+    color: #4d43ff;
+}
+
+.octicon {
+    filter: invert(50%);
+}
