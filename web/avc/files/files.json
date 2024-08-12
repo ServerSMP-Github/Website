@@ -100,7 +100,11 @@
         "./files/img/101.webp",
         "./files/img/102.webp",
         "./files/img/103.webp",
-        "./files/img/104.webp"
+        "./files/img/104.webp",
+        "./files/img/105.webp",
+        "./files/img/106.webp",
+        "./files/img/107.webp",
+        "./files/img/108.webp"
     ],
     "audio": [
         "./files/audio/1.webm"
