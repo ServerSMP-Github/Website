@@ -3,54 +3,6 @@ body {
     margin-top: 50px;
 }
 
-.disabled {
-    display: none;
-}
-
-.center {
-    justify-content: center;
-    align-items: center;
-	position: fixed;
-    display: flex;
-	bottom: 0;
-	right: 0;
-	left: 0;
-	top: 0;
-}
-
-.loading-box {
-    border: 5px solid #ffffff;
-    border-radius: 5px;
-    width: 425px;
-    height: 25px;
-}
-
-.center.disabled {
-    transition: all 1s;
-	transform: translateX(101%);
-}
-
-.loading-bar {
-    background-color: #ffffffff;
-    animation: loading 1.5s;
-    justify-content: center;
-    display: flex;
-    height: 100%;
-    width: 100%;
-}
-
-@keyframes loading {
-    0% { width: 0%; }
-	5% { width: 2%; }
-	7% { width: 10%; }
-	10% { width: 20%; }
-	25% { width: 25%; }
-	50% { width: 50%; }
-	60% { width: 70%; }
-	80% { width: 75%; }
-	100% { width: 100%; }
-}
-
 .container {
     font-family: Arial, Helvetica, sans-serif;
     justify-content: center;

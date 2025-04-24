@@ -7,63 +7,62 @@
     <link rel="shortcut icon" href="./img/icon.png">
 	<link rel="stylesheet" href="./assets/css/prince.min.css">
 	<link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./assets/css/animation.css">
     <title>ServerSMP</title>
 </head>
 <body>
 
-	<!-- loading -->
-	<div id="loading" class="center">
-		<div class="loading-box">
-			<div class="loading-bar"></div>
-		</div>
-	</div>
+    <div class="container">
 
-	<!-- body -->
-	<div id="body" class="disabled">
-		<div class="container">
-
-			<div class="grid">
-				<div class="card">
-					<h1 class="card-title">ServerSMP</h1>
-					<p class="card-description">ServerSMP is a passion project!</p>
-                    <br>
-                    <div class="button-container">
-                        <a class="button button-primary" href="./web/projects/index.html">Projects</a>
-                        <a class="button button-primary" href="https://api.serversmp.xyz/developers">Developers</a>
-                        <a class="button button-primary" href="https://discord.com/invite/zXnVNWjwvy">Discord</a>
+        <div class="grid anim-fade-in anim-smooth">
+            <div class="card">
+                <h1 class="card-title effect-underline anim-fade-in">ServerSMP</h1>
+                <p class="card-description anim-fade-in">ServerSMP is a passion project!</p>
+                <br>
+                <div class="anim-shake anim-time-5 anim-delay-700">
+                    <div class="button-container anim-delay-300">
+                        <a class="button button-primary hover-lift hover-brightness" href="./web/projects/index.html">Projects</a>
+                        <a class="button button-primary hover-lift hover-brightness" href="https://api.serversmp.xyz/developers">Developers</a>
+                        <a class="button button-primary hover-lift hover-brightness" href="https://discord.com/invite/zXnVNWjwvy">Discord</a>
                     </div>
-				</div>
-				<div class="card">
-					<img class="image-pixel" src="./img/icon.png" width="70%" height="70%">
-				</div>
-			</div>
+                </div>
+            </div>
+            <div class="card anim-float">
+                <div class="anim-flip-in-x">
+                    <div class="hover-scale-rotate">
+                        <img class="image-pixel effect-bounce" src="./img/icon.png" width="70%" height="70%">
+                    </div>
+                </div>
+            </div>
+        </div>
 
-            <div class="grid">
-                <div class="card card-background card-rounded">
+        <div class="grid">
+            <div class="anim-slide-in-left anim-bounce">
+                <div class="card card-background card-rounded hover-float effect-shine-bg">
                     <h1 class="card-title">API</h1>
                     <p class="card-description">A web api to get data from services and manipulate images.</p>
                     <br>
-                    <a class="button card-button button-secondary" href="https://api.serversmp.xyz/pages/api">View</a>
+                    <a class="button card-button button-secondary hover-brightness" href="https://api.serversmp.xyz/pages/api">View</a>
                     <br>
                     <br>
                     <img class="card-rounded card-shadow" src="./img/api.png" width="90%" height="90%">
                 </div>
+            </div>
 
-                <div class="card card-background card-rounded">
+            <div class="anim-slide-in-right anim-bounce">
+                <div class="card card-background card-rounded hover-float effect-shine-bg">
                     <h1 class="card-title">Lamar</h1>
                     <p class="card-description">A bot for all your needs! May it be moderation, info on things from your server, or even random pictures of ducks. We have it all!</p>
                     <br>
-                    <a class="button card-button button-success" href="https://serversmp-github.github.io/Lamar/">View</a>
+                    <a class="button card-button button-success hover-brightness" href="https://serversmp-github.github.io/Lamar/">View</a>
                     <br>
                     <br>
                     <img class="card-rounded card-shadow" src="./img/lamar.png" width="90%" height="90%">
                 </div>
-			</div>
+            </div>
+        </div>
 
-		</div>
-	</div>
-
-	<script src="./js/script.js"></script>
+    </div>
 
 </body>
 </html>
