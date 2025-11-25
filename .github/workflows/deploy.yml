@@ -1,0 +1,60 @@
+name: Deploy Website
+
+on:
+  push:
+    branches: ["v2"]
+  workflow_dispatch:
+
+permissions: write-all
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+
+  website:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Build Website
+        run: |
+          find . -name "build.js" -type f -exec echo "Running: {}" \; -exec bun run {} \;
+
+      - name: Cleanup
+        run: |
+          find . -name "build.js" -type f -delete
+          find . -name "*.template.html" -type f -delete
+
+      - name: Minify
+        run: |
+          bun install -g html-minifier clean-css-cli
+          find . -name "*.html" -type f -exec html-minifier --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype --minify-css true --minify-js true --output {} {} \;
+          find . -name "*.css" -type f -exec cleancss -o {} {} \;
+
+      - name: Create Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          name: website
+          path: ./
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+        with:
+          artifact_name: website
