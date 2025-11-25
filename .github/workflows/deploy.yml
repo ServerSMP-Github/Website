@@ -38,6 +38,12 @@ jobs:
           find . -name "build.js" -type f -delete
           find . -name "*.template.html" -type f -delete
 
+      - name: Install Dependencies
+        run: bun install
+
+      - name: Minify
+        run: bun run ./.github/minify.js
+
       - name: Create Artifact
         uses: actions/upload-pages-artifact@v3
         with:
