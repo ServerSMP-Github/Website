@@ -38,12 +38,6 @@ jobs:
           find . -name "build.js" -type f -delete
           find . -name "*.template.html" -type f -delete
 
-      - name: Minify
-        run: |
-          bun install -g html-minifier clean-css-cli
-          find . -name "*.html" -type f -exec html-minifier --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype --minify-css true --minify-js true --output {} {} \;
-          find . -name "*.css" -type f -exec cleancss -o {} {} \;
-
       - name: Create Artifact
         uses: actions/upload-pages-artifact@v3
         with:
