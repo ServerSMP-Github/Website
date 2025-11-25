@@ -1,3 +1,5 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
 .skeleton {
     opacity: .7;
     animation: skeleton-loading 1s linear infinite alternate
@@ -166,8 +168,6 @@ pre code {
     -webkit-font-feature-settings: 'liga';
     -webkit-font-smoothing: antialiased
 }
-
-@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
 #content browser {
     margin-right: -14px !important;
