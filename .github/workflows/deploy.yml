@@ -33,7 +33,7 @@ jobs:
         run: |
           find . -name "build.js" -type f -exec echo "Running: {}" \; -exec bun run {} \;
 
-      - name: Cleanup
+      - name: Cleanup Builds
         run: |
           find . -name "build.js" -type f -delete
           find . -name "*.template.html" -type f -delete
@@ -43,6 +43,12 @@ jobs:
 
       - name: Minify
         run: bun run ./.github/minify.js
+
+      - name: Cleanup Bun
+        run: |
+          rm -rf node_modules
+          rm package.json
+          rm bun.lock
 
       - name: Create Artifact
         uses: actions/upload-pages-artifact@v3
