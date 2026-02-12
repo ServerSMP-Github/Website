@@ -1,12 +1,12 @@
-const text = "404";
+const element = document.getElementById("typewriter-text");
+
+const text = element.textContent;
 let index = 0;
 let direction = 1;
 
 function typewriter() {
-    const typewriterText = document.getElementById("typewriter-text");
-
-    if (direction === 1) typewriterText.textContent = text.slice(0, ++index);
-    else typewriterText.textContent = text.slice(0, --index);
+    if (direction === 1) element.textContent = text.slice(0, ++index);
+    else element.textContent = text.slice(0, --index);
 
     if (index === text.length) direction = -1;
     else if (index === 0) direction = 1;
