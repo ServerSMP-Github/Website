@@ -1,6 +1,6 @@
 {
-  "dependencies": {
-    "@swc/core": "^1.15.3",
-    "lightningcss": "^1.30.2"
-  }
+    "dependencies": {
+        "@swc/core": "^1.15.3",
+        "lightningcss": "^1.30.2"
+    }
 }
