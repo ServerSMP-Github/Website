@@ -13,7 +13,7 @@ async function exist(path) {
 const location = path.join(__dirname, "..", "..");
 const links = require("./links.json");
 
-const template = await fs.readFile(path.join(__dirname, "template.html"), "utf8");
+const template = await fs.readFile(path.join(__dirname, "index.template.html"), "utf8");
 
 for (const link of links) {
     const input = path.join(location, link.input);

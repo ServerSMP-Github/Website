@@ -1,0 +1,62 @@
+[
+    {
+        "name": "API",
+        "description": "A web api to get data from services and manipulate images.",
+        "image": "./img/projects/api.png",
+        "link": "https://api.serversmp.xyz/pages/api"
+    },
+    {
+        "name": "Lamar",
+        "description": "A bot for all your needs! May it be moderation, info on things from your server, or even random pictures of ducks. We have it all!",
+        "image": "./img/projects/lamar.png",
+        "link": "https://serversmp-github.github.io/Lamar/"
+    },
+    {
+        "name": "Auth2",
+        "description": "A system I made to handle accounts for other projects, like the uploader and codebin+.",
+        "image": "./img/projects/auth2.png",
+        "link": "https://api.serversmp.xyz/auth2"
+    },
+    {
+        "name": "Uploader",
+        "description": "A file uploader with support for all file types. Built in markdown rendering, url shortener, audio to mp4, embeds and more.",
+        "image": "./img/projects/uploader.png",
+        "link": "https://api.serversmp.xyz/upload"
+    },
+    {
+        "name": "Sites",
+        "description": "A simple way to host a static site.",
+        "image": "./img/projects/sites.png",
+        "link": "https://api.serversmp.xyz/sites"
+    },
+    {
+        "name": "Post",
+        "description": "A tumblr like social media but with more code support.",
+        "image": "./img/projects/post.png",
+        "link": "https://api.serversmp.xyz/post"
+    },
+    {
+        "name": "Codebin+",
+        "description": "Codebin+ is a site where you can upload text with support for markdown rendering and language syntax highlighting.",
+        "image": "./img/projects/codebin+.png",
+        "link": "https://api.serversmp.xyz/codebinplus"
+    },
+    {
+        "name": "Shorten+",
+        "description": "Shorten+ is a site where you can shorten long urls.",
+        "image": "./img/projects/shorten+.png",
+        "link": "https://api.serversmp.xyz/shortenplus"
+    },
+    {
+        "name": "API - Shortener",
+        "description": "The shorten url for the API.",
+        "image": "./img/projects/shorten-link.png",
+        "link": "https://ssmp.link"
+    },
+    {
+        "name": "Slimefun Textures",
+        "description": "A combination texture pack for the mc plugin \"slimefun\"",
+        "image": "./img/projects/slimefun.png",
+        "link": "https://github.com/ServerSMP-Github/Slimefun-Textures"
+    }
+]
