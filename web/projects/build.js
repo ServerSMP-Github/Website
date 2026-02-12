@@ -19,8 +19,7 @@ const file = Bun.file(`${__dirname}/index.template.html`);
 
 Bun.write(
     `${__dirname}/index.html`,
-    await file
-        .text()
+    (await file.text())
         .replace(
             "REPLACE_WITH_CARDS",
             html.join("\n")
