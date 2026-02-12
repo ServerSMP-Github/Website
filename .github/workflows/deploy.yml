@@ -44,6 +44,9 @@ jobs:
       - name: Minify
         run: bun run ./.github/minify.js
 
+      - name: Migrate
+        run: bun run ./.github/migrate/index.js
+
       - name: Cleanup Bun
         run: |
           rm -rf node_modules
