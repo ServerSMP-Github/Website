@@ -1,10 +1,10 @@
 const cards = require("./cards.json");
 
 const html = [];
-for (const { name, description, link, image } of cards) {
+for (const { name, description, tags, link, image } of cards) {
     html.push(/* html */`
         <div class="card card-background card-rounded">
-            <h1 class="card-title">${name}</h1>
+            <h1 class="card-title">${name} ${tags.map(tag => `<span class="badge badge-primary">${tag}</span>`).join("")}</h1>
             <p class="card-description">${description}</p>
             <br>
             <a class="button card-button button-primary" href="${link}">View</a>
